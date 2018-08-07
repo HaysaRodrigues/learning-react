@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
+import Typography from '@material-ui/core/Typography';
+
 
 class Clock extends Component {
   constructor(props){
@@ -39,10 +41,10 @@ class Clock extends Component {
   render() {
     return (
       <div>
-        <div className="Clock-days">{this.leading0(this.state.days)} dias</div>
-        <div className="Clock-hours">{this.leading0(this.state.hours)} horas</div>
-        <div className="Clock-minutes">{this.leading0(this.state.minutes)} minutos</div>
-        <div className="Clock-seconds">{this.leading0(this.state.seconds)} segundos</div>
+        <Typography variant="title" gutterBottom className="Clock-days">{this.leading0(this.state.days)} dias</Typography>
+        <Typography variant="title" gutterBottom className="Clock-hours" >{this.leading0(this.state.hours)} horas</Typography>
+        <Typography variant="title" gutterBottom className="Clock-minutes">{this.leading0(this.state.minutes)} minutos</Typography>
+        <Typography variant="title" gutterBottom className="Clock-seconds">{this.leading0(this.state.seconds)} segundos</Typography>
       </div>
     )
   }
