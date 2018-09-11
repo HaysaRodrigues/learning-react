@@ -6,6 +6,9 @@
 - [material-ui para react <3](https://material-ui.com/)
 - [react bootstrap](https://react-bootstrap.github.io/getting-started/introduction)
 
+##
+
 # Links úteis usados durante o estudo:
 - [create-react-app](https://github.com/facebook/create-react-app)
 - [Código do curso ReactJS](https://github.com/15Dkatz/ReactJS_VideoGuides)
+- [The road to learn react portuguese.pdf](https://github.com/the-road-to-learn-react/the-road-to-learn-react-portuguese)
