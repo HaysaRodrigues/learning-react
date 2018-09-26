@@ -2,11 +2,17 @@
 - [Documentação do reactjs](https://reactjs.org/docs/hello-world.html)
 - [Conceito de Boilerplate](https://en.wikipedia.org/wiki/Boilerplate_code)
 
+## Leituras que ajudam no entendimento
+- [Introducing jsx](https://reactjs.org/docs/introducing-jsx.html)
+- [React components, elements and instances](https://reactjs.org/blog/2015/12/18/react-components-elements-and-instances.html)
+
 ## Design
 - [material-ui para react <3](https://material-ui.com/)
+- [ant design for react](https://ant.design/)
 - [react bootstrap](https://react-bootstrap.github.io/getting-started/introduction)
 
-##
+# Qualidade
+- [Standard JS - Para usar no Lint](https://standardjs.com/)
 
 # Links úteis usados durante o estudo:
 - [create-react-app](https://github.com/facebook/create-react-app)
