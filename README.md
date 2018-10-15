@@ -3,6 +3,7 @@
 - [Conceito de Boilerplate](https://en.wikipedia.org/wiki/Boilerplate_code)
 
 ## Leituras que ajudam no entendimento
+- [Javascript fundamentals react requirements](https://www.robinwieruch.de/javascript-fundamentals-react-requirements/#react-javascript)
 - [Introducing jsx](https://reactjs.org/docs/introducing-jsx.html)
 - [React components, elements and instances](https://reactjs.org/blog/2015/12/18/react-components-elements-and-instances.html)
 
