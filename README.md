@@ -8,7 +8,7 @@
 - [React components, elements and instances](https://reactjs.org/blog/2015/12/18/react-components-elements-and-instances.html)
 
 ## Design
-- [material-ui para react <3](https://material-ui.com/)
+- [material-ui para react](https://material-ui.com/)
 - [ant design for react](https://ant.design/)
 - [react bootstrap](https://react-bootstrap.github.io/getting-started/introduction)
 
