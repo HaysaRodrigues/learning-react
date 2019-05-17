@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import $ from 'jquery'
 import Input from './Input'
 import Button from './Button'
+import PubSub from 'pubsub-js'
 
 class FormularioAutor extends Component {
 
@@ -39,9 +40,10 @@ class FormularioAutor extends Component {
       dataType:'json',
       type:'post',
       data: JSON.stringify({nome:this.state.nome,email:this.state.email,senha:this.state.senha}),
-      success: function(resposta){
-        this.props.callbackAtualizaLista(resposta)
-       }.bind(this),
+      success: function(novaListagem){
+        PubSub.publish('atualiza-lista-autores', novaListagem)
+        // this.props.callbackAtualizaLista(resposta)
+       },
       error: function(resposta){
         console.log("erro");
       }      
@@ -108,7 +110,6 @@ export default class AuterBox extends Component {
     this.state = {
       lista: []  
     }
-    // this.atualizaListagem = this.atualizaListagem.bind(this) poderia ser aqui ou lá embaixo.
   }
 
   componentDidMount(){
@@ -119,16 +120,17 @@ export default class AuterBox extends Component {
         this.setState({lista:response})
       }.bind(this)  
     })
+
+    PubSub.subscribe('atualiza-lista-autores', function(topico, novaLista){
+      this.setState({lista: novaLista})
+    }.bind(this))
   }
 
-  atualizaListagem(novaLista){
-    this.setState({lista: novaLista})
-  }
 
   render() {
     return (
       <>
-        <FormularioAutor callbackAtualizaLista={this.atualizaListagem.bind(this)}/>
+        <FormularioAutor />
         <TabelaAutores lista={this.state.lista}/>
       </>
     )
