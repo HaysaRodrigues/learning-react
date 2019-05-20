@@ -13,6 +13,7 @@
 - [material-ui para react](https://material-ui.com/)
 - [ant design for react](https://ant.design/)
 - [react bootstrap](https://react-bootstrap.github.io/getting-started/introduction)
+- [PubSubJS, usado para diminuir acoplamento em react](https://github.com/mroderick/PubSubJS)
 
 # Qualidade
 - [Standard JS - Para usar no Lint](https://standardjs.com/)
@@ -21,3 +22,9 @@
 - [create-react-app](https://github.com/facebook/create-react-app)
 - [Código do curso ReactJS](https://github.com/15Dkatz/ReactJS_VideoGuides)
 - [The road to learn react portuguese.pdf](https://github.com/the-road-to-learn-react/the-road-to-learn-react-portuguese)
+
+# Ordem de conteúdo
+- [React Bind](https://medium.com/tableless/https-medium-com-tableless-react-this-bind-so-sei-que-e-assim-73e75f2adbd3)
+- [Constructor](https://reactjs.org/docs/react-component.html#constructor)
+- [Synthetic Event](https://reactjs.org/docs/events.html)
+- [Higher order components](https://reactjs.org/docs/higher-order-components.html)
