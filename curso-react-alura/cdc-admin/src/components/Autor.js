@@ -3,6 +3,7 @@ import $ from 'jquery'
 import Input from './Input'
 import Button from './Button'
 import PubSub from 'pubsub-js'
+import TratadorErros from '../TratadorErros'
 
 class FormularioAutor extends Component {
 
@@ -42,10 +43,11 @@ class FormularioAutor extends Component {
       data: JSON.stringify({nome:this.state.nome,email:this.state.email,senha:this.state.senha}),
       success: function(novaListagem){
         PubSub.publish('atualiza-lista-autores', novaListagem)
-        // this.props.callbackAtualizaLista(resposta)
        },
-      error: function(resposta){
-        console.log("erro");
+      error: function(resposta) {
+        if(resposta.status === 400) {
+          new TratadorErros().publicaErros(resposta.responseJSON)
+        }
       }      
     });
   }
