@@ -4,7 +4,7 @@ export default class LivroAdmin extends Component {
   render() {
     return (
       <div>
-        livro admin ta``ca
+        livro admin
       </div>
     )
   }
