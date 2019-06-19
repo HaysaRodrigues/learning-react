@@ -24,7 +24,7 @@
     render() {
       return (
         <div className="pure-control-group">
-          <label htmlFor={this.props.id}>Nome</label> 
+          <label htmlFor={this.props.id}>{this.props.nomeCampo}</label> 
           <input 
             id={this.props.id} 
             type={this.props.type} 

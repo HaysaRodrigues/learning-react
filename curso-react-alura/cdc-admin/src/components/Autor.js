@@ -7,7 +7,7 @@ import TratadorErros from '../TratadorErros'
 
 class FormularioAutor extends Component {
 
-  constructor(){
+  constructor() {
     super()
     this.state = {
         nome: '',
@@ -33,7 +33,7 @@ class FormularioAutor extends Component {
     this.setState({senha: event.target.value})
   }
 
-  sendForm(evento){
+  sendForm(evento) {
     evento.preventDefault();    
     $.ajax({
       url:'http://cdc-react.herokuapp.com/api/autores',
@@ -60,16 +60,15 @@ class FormularioAutor extends Component {
     return (
       <div className="pure-form pure-form-aligned">
         <form className="pure-form pure-form-aligned" onSubmit={this.sendForm.bind(this)} >
-          <Input id="nome" type="text" name="nome" value={this.state.nome} onChange={this.setNome}/>
-          <Input id="email" type="email" name="email" value={this.state.email} onChange={this.setEmail}/>
-          <Input id="senha" type="password" name="senha" value={this.state.senha} onChange={this.setSenha}/>
+          <Input id="nome"  nomeCampo="nome" type="text" name="nome" value={this.state.nome} onChange={this.setNome}/>
+          <Input id="email" nomeCampo="email" type="email" name="email" value={this.state.email} onChange={this.setEmail}/>
+          <Input id="senha" nomeCampo="senha" type="password" name="senha" value={this.state.senha} onChange={this.setSenha}/>
           <Button label="Salvar"/>
         </form>             
       </div> 
     )
   }
 }
-
 
 class TabelaAutores extends Component {
 
