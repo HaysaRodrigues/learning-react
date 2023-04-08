@@ -9,12 +9,12 @@
 ## React Hooks
 - [what is usestate in react](https://stackoverflow.com/questions/53165945/what-is-usestate-in-react)
 
-## Leituras que ajudam no entendimento
+## Leituras importantes
 - [Javascript fundamentals react requirements](https://www.robinwieruch.de/javascript-fundamentals-react-requirements/#react-javascript)
 - [Introducing jsx](https://reactjs.org/docs/introducing-jsx.html)
 - [React components, elements and instances](https://reactjs.org/blog/2015/12/18/react-components-elements-and-instances.html)
 
-## Design
+## Design | Styles | CSS/UI
 - [styled-components](https://www.styled-components.com/)
 - [purecss](http://purecss.io/start/)
 - [material-ui para react](https://material-ui.com/)
