@@ -25,7 +25,8 @@
 ## Qualidade
 - [Standard JS - Para usar no Lint](https://standardjs.com/)
 
-## Links para estudo:
-- [create-react-app](https://github.com/facebook/create-react-app)
+## Material de apoio:
+- [create-react-app is officially no longer supported by facebook](https://dev.to/ag2byte/create-react-app-is-officially-dead-h7o)
+    - [aqui tem algumas opções pra criar react apps sem precisar do create-react-app](https://react.dev/learn/start-a-new-react-project)
 - [Código do curso ReactJS](https://github.com/15Dkatz/ReactJS_VideoGuides)
 - [The road to learn react portuguese.pdf](https://github.com/the-road-to-learn-react/the-road-to-learn-react-portuguese)
